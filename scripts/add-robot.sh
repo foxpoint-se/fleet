@@ -70,4 +70,16 @@ aws iot attach-thing-principal --principal $certArn --thing-name $robot_name
 iot_policy_name=IotFullAccessPolicy
 aws iot attach-policy --policy-name $iot_policy_name --target $certArn
 
-curl https://www.amazontrust.com/repository/AmazonRootCA1.pem > $root_cert_file
+curl -sS https://www.amazontrust.com/repository/AmazonRootCA1.pem > $root_cert_file
+
+echo "Done!"
+echo ""
+echo "Created files:"
+echo $root_cert_file
+echo $priv_key_location
+echo $config_folder_path$robot_name.public.key
+echo $cert_file
+echo $iotConfigFile
+echo ""
+echo "Your config looks like this:"
+cat $iotConfigFile
