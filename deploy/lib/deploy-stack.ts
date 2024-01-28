@@ -7,7 +7,7 @@ import { Construct } from "constructs";
 // https://github.com/aws/aws-cdk/issues/19303
 
 const iot = cdk.aws_iot;
-export class DeployStack extends cdk.Stack {
+export class UnusedStackForInspiration extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
