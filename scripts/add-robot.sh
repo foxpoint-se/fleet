@@ -83,3 +83,4 @@ echo $iotConfigFile
 echo ""
 echo "Your config looks like this:"
 cat $iotConfigFile
+echo ""
