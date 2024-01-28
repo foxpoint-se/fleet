@@ -19,4 +19,4 @@ cdk-deploy:
 	cd deploy && yarn cdk deploy
 
 .PHONY: deploy
-deploy: setup cdk-deploy-web		## deploy web app
+deploy: setup cdk-deploy		## deploy web app
