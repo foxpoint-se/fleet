@@ -16,7 +16,7 @@ setup: setup-deploy		## install and setup everything for development
 
 .PHONY: cdk-deploy
 cdk-deploy:
-	cd deploy && yarn cdk deploy
+	cd deploy && yarn cdk deploy --require-approval never
 
 .PHONY: deploy
 deploy: setup cdk-deploy		## deploy web app
