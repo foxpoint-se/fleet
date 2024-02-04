@@ -20,3 +20,7 @@ cdk-deploy:
 
 .PHONY: deploy
 deploy: setup cdk-deploy		## deploy web app
+
+.PHONY: add-robot
+add-robot:		## print how to add robot
+	@echo "Usage: ./scripts/add-robot.sh <robot-name>"
