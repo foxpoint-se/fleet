@@ -19,7 +19,7 @@ cdk-deploy:
 	cd deploy && yarn cdk deploy --all --require-approval never
 
 .PHONY: deploy
-deploy: setup cdk-deploy		## deploy web app
+deploy: setup cdk-deploy		## deploy everything
 
 .PHONY: add-robot
 add-robot:		## print how to add robot
