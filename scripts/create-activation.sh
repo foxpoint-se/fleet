@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <robot name>"
+    exit 1
+fi
+
 default_instance_name=EelNode
 
 aws ssm create-activation \

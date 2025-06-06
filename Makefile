@@ -22,5 +22,9 @@ cdk-deploy:
 deploy: setup cdk-deploy		## deploy everything
 
 .PHONY: add-robot
-add-robot:		## print how to add robot
+add-robot:		## print how to add robot for MQTT connection
 	@echo "Usage: ./scripts/add-robot.sh <robot-name>"
+
+.PHONY: add-ssm-activation
+add-ssm-activation:		## print how to add SSM activation, for SSH connection
+	@cat ./ssm-instructions.md

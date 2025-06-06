@@ -27,3 +27,11 @@ får fortfarande problem med att den rollen inte får hämta secrets.
 men get-caller-identity säger att det är jag
 hur säger man att det är jag?
 kan ju också ge tillåtelse för den rollen att läsa. men är det rätt?
+
+verkar vara helt onödigt att spara code och id som secrets. och att använda samma activation flera gånger.
+kan istället skapa en ny activation för varje grej.
+och använda code och id från den outputten
+
+ta bort secrets från stacken
+`yarn cdk destroy ManagedInstancesStack`
+och ta bort koden
